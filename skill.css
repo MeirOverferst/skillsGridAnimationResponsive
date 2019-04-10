@@ -1,8 +1,3 @@
-/* #tester{
-    width: 100%;
-    height: 200vh;
-    background-color: lightpink;
-} */
 .lowerside{
     width: 100%;
     height: 200vh;
@@ -14,17 +9,19 @@
     height: 100%;
 }
 .skillsGridConainer{
-    position: relative;
-    box-sizing: border-box;
-
+    display: flex;
 }
-.grid-container { 
-    box-sizing: border-box;
+.preGrid{
+    /* width: 10em; */
+    height: 100%;
+    background: cyan;
+}
+.grid-container {
     display: grid;
-    grid-template-columns: 0.035fr 0.035fr 0.035fr 0.035fr 0.035fr 0.035fr 0.035fr 0.035fr 0.15fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 1.5em;
-  }
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 0.1fr;
+    gap: 0.5em 3.5em;
+}
  .png{
      text-align: center;
  }
@@ -50,23 +47,26 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+    border-radius: 4px;
+  }
+  .skillbar-bar{
+    border-radius: 4px;
   }
   .cover{
     width: inherit;
     height: inherit;
     background-image: url(../../profile-Website/wallhaven-120534.png);
-    background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column-reverse;
   }
   .cover :nth-of-type(1) {
-    height: 10%;
+    height: 19%;
   }
   
   
-  .html { grid-area: 2 / 1 / 7 / 2; }
-  
+  .html { grid-area: 2 / 1 / 7 / 2;}
+
   .css { grid-area: 2 / 2 / 7 / 3; }
   
   .js { grid-area: 2 / 3 / 7 / 4; }
@@ -80,17 +80,21 @@
   .node { grid-area: 2 / 7 / 7 / 8; }
   
   .bbq { grid-area: 2 / 8 / 7 / 9; }
-  
-  .mastertext { grid-area: 1 / 9 / 2 / 10; }
-  
+
+p{ 
+line-height: 85%;
+position: relative;
+top: 1.5em;
+}
+hr {
+    position: relative; 
+    align: left;
+    width: 100%;
+ }
+
+  .mastertext { grid-area: 1 / 9 / 2 / 10;}
   .hightext { grid-area: 2 / 9 / 3 / 10; }
-  
   .mediumtext { grid-area: 3 / 9 / 4 / 10; }
-  
   .basictext { grid-area: 4 / 9 / 5 / 10; }
-  
   .uhtext { grid-area: 5 / 9 / 6 / 10; }
-  .mastertext, .hightext ,.mediumtext, .basictext ,.uhtext{
-      position: relative;
-      top: 2.5em;
-  }
+  .extraText {grid-area: 6/9/7/10;}
