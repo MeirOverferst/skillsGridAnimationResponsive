@@ -1,0 +1,96 @@
+/* #tester{
+    width: 100%;
+    height: 200vh;
+    background-color: lightpink;
+} */
+.lowerside{
+    width: 100%;
+    height: 200vh;
+    background-color: aqua;
+}
+
+#skills{
+    width: 100%;
+    height: 100%;
+}
+.skillsGridConainer{
+    position: relative;
+    box-sizing: border-box;
+
+}
+.grid-container { 
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 0.035fr 0.035fr 0.035fr 0.035fr 0.035fr 0.035fr 0.035fr 0.035fr 0.15fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+  }
+ .png{
+     text-align: center;
+ }
+
+  .png1 { grid-area: 7 / 1 / 8 / 2; }
+  
+  .png2 { grid-area: 7 / 2 / 8 / 3; }
+  
+  .png3 { grid-area: 7 / 3 / 8 / 4; }
+  
+  .png4 { grid-area: 7 / 4 / 8 / 5; }
+  
+  .png5 { grid-area: 7 / 5 / 8 / 6; }
+  
+  .png6 { grid-area: 7 / 6 / 8 / 7; }
+  
+  .png7 { grid-area: 7 / 7 / 8 / 8; }
+  
+  .png8 { grid-area: 7 / 8 / 8 / 9; }
+  
+  .skillbar {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .cover{
+    width: inherit;
+    height: inherit;
+    background-image: url(../../profile-Website/wallhaven-120534.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .cover :nth-of-type(1) {
+    height: 10%;
+  }
+  
+  
+  .html { grid-area: 2 / 1 / 7 / 2; }
+  
+  .css { grid-area: 2 / 2 / 7 / 3; }
+  
+  .js { grid-area: 2 / 3 / 7 / 4; }
+  
+  .sass { grid-area: 2 / 4 / 7 / 5; }
+  
+  .jquery { grid-area: 2 / 5 / 7 / 6; }
+  
+  .react { grid-area: 2 / 6 / 7 / 7; }
+  
+  .node { grid-area: 2 / 7 / 7 / 8; }
+  
+  .bbq { grid-area: 2 / 8 / 7 / 9; }
+  
+  .mastertext { grid-area: 1 / 9 / 2 / 10; }
+  
+  .hightext { grid-area: 2 / 9 / 3 / 10; }
+  
+  .mediumtext { grid-area: 3 / 9 / 4 / 10; }
+  
+  .basictext { grid-area: 4 / 9 / 5 / 10; }
+  
+  .uhtext { grid-area: 5 / 9 / 6 / 10; }
+  .mastertext, .hightext ,.mediumtext, .basictext ,.uhtext{
+      position: relative;
+      top: 2.5em;
+  }
