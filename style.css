@@ -1,0 +1,249 @@
+.lowerside {
+  width: 100%;
+  height: 200vh;
+  background-color: aqua;
+}
+
+#skills {
+  width: 100%;
+  height: 100%;
+}
+
+.skillsGridConainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.preGrid {
+  /* width: 10em; */
+  height: 100%;
+  background: cyan;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 0.1fr;
+      grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 0.1fr;
+  gap: 0.5em 3.5em;
+}
+
+.png {
+  text-align: center;
+}
+
+.png1 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 7 / 2 / 8 / 3;
+}
+
+.png2 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 7 / 3 / 8 / 4;
+}
+
+.png3 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 7 / 4 / 8 / 5;
+}
+
+.png4 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-area: 7 / 5 / 8 / 6;
+}
+
+.png5 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
+  grid-area: 7 / 6 / 8 / 7;
+}
+
+.png6 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  grid-area: 7 / 7 / 8 / 8;
+}
+
+.png7 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 1;
+  grid-area: 7 / 8 / 8 / 9;
+}
+
+.png8 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 1;
+  grid-area: 7 / 9 / 8 / 10;
+}
+
+.skillbar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.skillbar-bar {
+  border-radius: 4px;
+}
+
+.cover {
+  width: inherit;
+  height: inherit;
+  background-image: url(../../profile-Website/wallhaven-120534.png);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.cover :nth-of-type(1) {
+  height: 19%;
+}
+
+.html {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 7 / 3;
+}
+
+.css {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 3 / 7 / 4;
+}
+
+.js {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 4 / 7 / 5;
+}
+
+.sass {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 5 / 7 / 6;
+}
+
+.jquery {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 6 / 7 / 7;
+}
+
+.react {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 7 / 7 / 8;
+}
+
+.node {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 8 / 7 / 9;
+}
+
+.bbq {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 1;
+  grid-area: 2/9/7/10;
+}
+
+p {
+  line-height: 85%;
+  position: relative;
+  top: 1.5em;
+}
+
+.mastertext {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.hightext {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.mediumtext {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.basictext {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.uhtext {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.extraText {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 6/1/7/2;
+}
+/*# sourceMappingURL=style.css.map */
