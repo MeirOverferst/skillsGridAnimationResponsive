@@ -5,7 +5,6 @@
 }
 
 #skills {
-  width: 100%;
   height: 100%;
 }
 
@@ -13,22 +12,30 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 80%;
 }
 
-.preGrid {
-  /* width: 10em; */
-  height: 100%;
-  background: cyan;
+.sideGrid {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.sideGrid1 {
+  width: 20%;
 }
 
 .grid-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 0.1fr;
-      grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 0.1fr;
-  gap: 0.5em 3.5em;
+  -ms-grid-columns: 0.4fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr;
+      grid-template-columns: 0.4fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1.1% 1.5%;
 }
 
 .png {
@@ -129,6 +136,11 @@
   height: 19%;
 }
 
+.legend {
+  position: relative;
+  left: 0.2em;
+}
+
 .html {
   -ms-grid-row: 2;
   -ms-grid-row-span: 5;
@@ -194,9 +206,10 @@
 }
 
 p {
-  line-height: 85%;
+  margin: 0;
+  line-height: 100%;
   position: relative;
-  top: 1.5em;
+  top: 25%;
 }
 
 .mastertext {
@@ -245,5 +258,10 @@ p {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 6/1/7/2;
+}
+
+.thanos {
+  position: relative;
+  left: 2%;
 }
 /*# sourceMappingURL=style.css.map */
